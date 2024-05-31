@@ -1,0 +1,69 @@
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #f6d365;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right bottom, rgb(184, 157, 67), rgba(253, 160, 133, 1))
+    }
+    
+    #btn {
+        background-color: yellow; /* Remove this line if you want only the gradient background */
+        border: none;
+        padding: 12px 24px;
+        border-radius: 18px;
+       
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.3s ease;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        background: linear-gradient(to right bottom, rgb(184, 157, 67), rgba(253, 160, 133, 1));
+       margin-left: 270px;
+       margin-top: 30px;
+    }
+    
+    #btn:hover {
+        transform: scale(1.05);
+        background: linear-gradient(to right bottom, rgba(253, 160, 133, 1), rgb(184, 157, 67));
+    }
+    
+    #btn a {
+        color:rgb(16, 17, 17); /* Set the text color to black */
+        text-decoration: none; /* Remove underline */
+        display: block; /* Make the anchor fill the button */
+    }
+
+
+    #edt {
+      
+        border: none;
+        padding: 7px 14px;
+        border-radius: 10px;
+        font-size: 19px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.3s ease;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        background: linear-gradient(to right bottom, rgb(184, 157, 67), rgba(253, 160, 133, 1));
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    #edt a {
+        color: black; /* Set the text color to black */
+        text-decoration: none; /* Remove underline */
+        display: block; /* Make the anchor fill the button */
+    }
+
+    #edt:hover {
+        transform: scale(1.05);
+        background: linear-gradient(to right bottom, rgba(253, 160, 133, 1), rgb(184, 157, 67));
+    }
