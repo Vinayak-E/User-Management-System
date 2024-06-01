@@ -20,7 +20,7 @@ app.use((err, req, res, next) => {
 
 
 //for user routes
-const userRoute = require('./routes/userRoute');
+const userRoute =require('./routes/userRoute');
 app.use('/',userRoute);
 
  

@@ -110,41 +110,6 @@ const newUserLoad = async(req,res)=>{
     }
 }
 
-// const addUser = async(req,res)=>{
-//     try{
-//        const name = req.body.name;
-//        const email = req.body.email;
-//        const mobile = req.body.mobile;
-       
-//        const password = randomstring.generate(8)
-
-//        const spassword = await securePassword(password)  
-
-//        const user = new User({
-
-        
-//         name:name,
-//         email:email,
-//         mobile:mobile,
-//         password:spassword,
-//         is_admin:0
-
-//        })
-
-//       const userData = await user.save();
-//       if(userData){
-
-//         res.redirect('/admin/dashboard')
-
-//       }else{
-//         res.render("newuser",{message:"Something wrong"})
-//       }
-
-//     }catch(error){
-//         console.log(error.message)
-//     }
-// }
-
 const addUser = async(req,res)=>{
     try{
         const spassword = await securePassword(req.body.password);
